@@ -54,6 +54,74 @@ Three-Word: 51.6%
 
 I continued to model results for my other categorical variables HLcat and OCcat.  These variables included more options for the model to consider, rendering the accuracy to not be as high as NetUpDown.  For example, the best accuracy when modeling for OCcat was using the Support Vector Machine (SVM) algorithm on the headlines that included stop words, and it was about 31%.  Given that a random guess on 4 categorical variables is 25%, this was a slight improvement but indicated the power of machine learning to improve accuracy.  However, that same SVM model on OCcat when used on the headlines with stop words removed only performed at 24.8% accuracy.  Almost identical accuracy as a random guess.
  
+ One, Two, and Three Word Positive and Negative Coeffecient Results without stopwords using LogisticRegression() below:
  
+Positive One Word	Coefficients
+15518	kills	0.584569
+24864	set	0.470890
+18336	mumbai	0.435496
+27684	territory	0.430944
+18856	network	0.420127
+19004	nigeria	0.414495
+19697	olympics	0.414448
+24716	seize	0.394041
+29830	votes	0.392725
+10949	first	0.391790
  
+Negative One Word	Coefficients
+13526	hours	-0.435569
+6556	congo	-0.443189
+26066	speech	-0.444393
+16596	low	-0.455239
+24028	run	-0.488109
+7006	country	-0.512273
+7164	criminal	-0.516699
+24594	sea	-0.527582
+3577	begin	-0.551698
+24237	sanctions	-0.563508
 
+Postive Two Word	Coefficients
+121455	first time	0.346772
+146840	high court	0.259975
+212871	new zealand	0.256025
+311310	tear gas	0.253324
+279666	security council	0.224942
+78301	court rules	0.213831
+226324	palestinian state	0.208117
+276214	says russia	0.199270
+293320	south korea	0.193078
+
+Negative Two Word	Coefficients
+233007	phone hacking	-0.174392
+338846	wall street	-0.186267
+40759	bin laden	-0.188260
+149587	hong kong	-0.191700
+162677	iran nuclear	-0.195982
+216164	nuclear weapons	-0.201817
+283940	sexual abuse	-0.202063
+293321	south korean	-0.280352
+25985	around world	-0.302241
+
+Positive Three Word	Coefficients
+265355	nobel peace prize	0.250569
+214896	kim jong un	0.149927
+185664	human rights watch	0.143440
+147652	first time since	0.135138
+407043	un security council	0.130380
+21187	al jazeera english	0.109584
+3637	18 year old	0.109397
+302203	president hosni mubarak	0.106104
+302127	president evo morales	0.103716
+282241	papua new guinea	0.103163
+
+Negative Three Word	Coefficients
+157506	fukushima nuclear plant	-0.095381
+71333	chancellor angela merkel	-0.096266
+162293	german chancellor angela	-0.101639
+289945	phone hacking scandal	-0.104505
+249405	missile defense system	-0.107351
+382065	syrian security forces	-0.110006
+38059	aung san suu	-0.112759
+339226	san suu kyi	-0.112759
+435053	world war ii	-0.119638
+277944	osama bin laden	-0.161913
