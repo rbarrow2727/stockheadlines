@@ -54,7 +54,7 @@ Three-Word: 51.6%
 
 I continued to model results for my other categorical variables HLcat and OCcat.  These variables included more options for the model to consider, rendering the accuracy to not be as high as NetUpDown.  For example, the best accuracy when modeling for OCcat was using the Support Vector Machine (SVM) algorithm on the headlines that included stop words, and it was about 31%.  Given that a random guess on 4 categorical variables is 25%, this was a slight improvement but indicated the power of machine learning to improve accuracy.  However, that same SVM model on OCcat when used on the headlines with stop words removed only performed at 24.8% accuracy.  Almost identical accuracy as a random guess.
  
- One, Two, and Three Word Positive and Negative Coeffecient Results without stopwords using LogisticRegression() below:
+One, Two, and Three Word Positive and Negative Coeffecient Results without stopwords using LogisticRegression() below:
  
 Positive One Word	Coefficients
 15518	kills	0.584569
